@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="ICT13580043FinalA.ProductNewPage"
+    >
+    <ScrollView Orientation="Vertical">
+
+<StackLayout
+Orientation="Vertical">
+
+<Label
+x:Name="titleLabel"
+Text="13580043"
+HorizontalTextAlignment="Center"
+FontSize="20"
+FontAttributes="Bold"
+Margin="20"/>
+
+<Label
+Text="ชื่อ"
+TextColor="Black"
+FontSize="10">
+</Label>
+<Entry
+x:Name="nameEntry"
+Placeholder="ชื่อ"
+BackgroundColor="White" />
+
+<Label
+Text="นามสกุล"
+TextColor="Black"
+FontSize="10">
+</Label>
+<Entry
+x:Name="surnameEntry"
+Placeholder="นามสกุล"
+BackgroundColor="White" 
+/>
+
+<Label
+Text="อายุ"
+TextColor="Black"
+FontSize="10">
+</Label>
+<Entry
+x:Name="ageEntry"
+Placeholder="กรุณากรอกอายุ"
+BackgroundColor="White" 
+/> 
+
+<Label
+Text="เพศ"
+TextColor="Black"
+FontSize="10">
+</Label>
+<Picker
+
+x:Name="genderPicker"
+Title="กรุณาเลือกเพศ"/>
+
+<Label
+Text="แผนก"
+TextColor="Black"
+FontSize="10">
+</Label>
+<Picker
+
+x:Name="departmentPicker"
+Title="กรุณาเลือกแผนก"/>
+
+<Label
+Text = "เบอร์โทรศัพท์"
+TextColor="Black"
+FontSize="10">
+</Label>
+<Entry
+x:Name="phonEntry"
+Placeholder="กรุณากรอกเบอร์โทรศัพท์"
+BackgroundColor="White" 
+/> 
+
+<Label
+Text = "อีเมล์"
+TextColor="Black"
+FontSize="10">
+</Label>
+<Entry
+x:Name="emailEntry"
+Placeholder="กรุณากรอกอีเมล์"
+BackgroundColor="White" 
+/> 
+
+<Label
+Text = " ที่อยู่"
+TextColor="Black"
+FontSize="10">
+</Label>
+<Entry
+x:Name="addressEntry"
+Placeholder="กรุณากรอกที่อยู่(บ้านเลขที่ ซอย เขต จังหวัด )"
+BackgroundColor="White" 
+/> 
+
+<Label
+Text = " สถานะการแต่งงาน"
+TextColor="Black"
+FontSize="14">
+</Label>
+
+<Switch
+IsToggled="true"/>
+
+<Label 
+Text="จำนวนบุตร"
+x:Name = "valuelable"/>
+
+<Stepper
+
+Maximum="100"
+Minimum="0"
+Value="0"
+Increment="1"
+x:Name = "myStepper"
+/>
+
+<Button
+x:Name="saveButton"
+Text="บันทึก"
+BackgroundColor="Silver"
+>
+</Button>
+<Button
+x:Name="cancelButton"
+Text="ยกเลิก"
+BackgroundColor="Silver"
+/>
+
+</StackLayout> 
+    </ScrollView>
+    </ContentPage>
