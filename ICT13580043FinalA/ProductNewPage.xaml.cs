@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using ICT13580043FinalA.Model;
 using Xamarin.Forms;
 
 namespace ICT13580043FinalA
 {
     public partial class ProductNewPage : ContentPage
     {
+        private Product product;
 
         public ProductNewPage()
         {
@@ -26,6 +27,11 @@ namespace ICT13580043FinalA
 
 			myStepper.ValueChanged += MyStepper_ValueChanged;
 
+        }
+
+        public ProductNewPage(Product product)
+        {
+            this.product = product;
         }
 
         void MyStepper_ValueChanged(object sender, ValueChangedEventArgs e)

@@ -3,8 +3,11 @@ using Xamarin.Forms;
 
 namespace ICT13580043FinalA
 {
+
+
     public partial class App : Application
     {
+        public static Dbhelper Dbhelper { get; set; }
 		public App()
 		{
 			InitializeComponent();
@@ -13,7 +16,7 @@ namespace ICT13580043FinalA
 		{
 			InitializeComponent();
 
-            Dbhelper = new DbHelper(dbPath);
+            Dbhelper = new Dbhelper(dbPath);
 
 
 			MainPage = new NavigationPage(new MainPage());
